@@ -1,0 +1,40 @@
+{
+	"name": "Customized",
+	"version": "1.0.0",
+	"author": [
+		"John Mark Roco"
+	],
+	"url": "ilc.upd.edu.ph",
+	"descriptionmsg": "ILC Customization",
+	"license-name": "GNU",
+	"type": "other",
+	"AutoloadClasses": {
+		"Customized": "includes/Customized.php",
+		"CustomizedHooks": "includes/Customized.hooks.php",
+		"WebApi": "includes/Webapi.php",
+		"CustomizedFooter": "includes/Customized.footer.php",
+		"CustomizedUserpolicy": "includes/Customized.userpolicy.php"
+	},
+	"ResourceModules": {
+          "ilc.Customized.style": {
+               "styles": "ilc.Customized.style.css",
+               "targets": ["mobile","desktop"]
+          },
+	  "ilc.Customized.script": {
+	       "scripts": "ilc.Customized.script.js",
+               "targets": ["mobile","desktop"],
+	       "dependencies": "jquery"
+	  }
+     },
+     "ResourceFileModulePaths": {
+          "localBasePath": "resources",
+          "remoteExtPath": "Customized/resources"
+     },
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"CustomizedHooks::onParserFirstCallInit"
+		],
+		"BeforePageDisplay": "CustomizedHooks::onBeforePageDisplay"
+	},
+	"manifest_version": 1
+}

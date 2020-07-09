@@ -1,0 +1,37 @@
+{
+	"name":"IskoMoSkin",
+	"version":"1.0.0",
+	"author":[
+		"John Mark Roco"
+	],
+	"url":"ilc.upd.edu.ph",
+	"descriptionmsg":"Turn iskomunidad intor mobile layout.",
+	"license-name":"",
+	"type":"other",
+	"AutoloadClasses":{
+		"IskoMoSkin":"includes/IskoMoSkin.php",
+		"IskoMoSkinHooks":"includes/IskoMoSkin.hooks.php"
+	},
+	"ResourceModules":{
+		"IskoMoSkin.style":{
+			"styles":"IskoMoSkin.style.css",
+			"targets":["mobile","desktop","tablet"]
+		},
+		"IskoMoSkin.script":{
+			"scripts":"IskoMoSkin.script.js",
+			"targets":["mobile","desktop","tablet"],
+			"dependencies":"jquery"
+		}
+	},
+	"ResourceFileModulePaths":{
+		"localBasePath":"resources",
+		"remoteExtPath":"IskoMoSkin/resources"
+	},
+	"Hooks":{
+		"ParseFirstCallInit":[
+			"IskoMoSkinHooks::onParseFirstCallInit"
+		],
+		"BeforePageDisplay":"IskoMoSkinHooks::onBeforePageDisplay"
+	},
+	"manifest_version":1
+}

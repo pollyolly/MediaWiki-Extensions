@@ -1,0 +1,38 @@
+/*
+ * Mobile
+ */
+@media only screen and (max-width: 850px){
+/*
+ * Header
+ */
+   #mw-header-container {
+      display:none;
+   }
+   #site-tools, #site-navigation {display:none;}
+/*
+ * Body
+ */
+   #mw-header-hack { display:none; }
+   #mw-page-header-links { display:none; }
+   .mw-editsection {
+      float:right;
+   }
+/*#site-navigation,
+#p-logo-text,
+#p-search,
+#mw-footer-container {
+   display:none;
+}*/
+   body{
+      background-color:#ffffff !important;
+   }
+/*
+ * Footer
+ */
+   #mw-footer-container {
+      display:none;
+   }
+}
+/*
+ * Tablet
+ */

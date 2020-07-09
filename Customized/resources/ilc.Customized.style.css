@@ -1,0 +1,24 @@
+/**
+  * Articles cards
+  */
+.ilc-article, .ilc-article-image img{width:20em;} 
+.ilc-article{
+	display:inline-block;margin:.5em;
+	border-shadow: 0 1px 2px 1px rgba(0,0,0,0.02);
+	background:#fcfcfc;
+	border:solid #eeeeee;
+	border-width:1px 1px 0.2em;
+	vertical-align:top;
+}
+.ilc-article-title{font-weight: 600;font-size:1em;}
+.ilc-article-body {
+	padding: .5em;
+	text-align:left;
+}
+/**
+ * Footer media 
+ */
+@media only screen and (max-width: 600px){
+.customized-footer-col {margin-left:-8em !important;}
+.isk-lastmod {padding-left: 1.9em !important;margin-left:0;}
+}
